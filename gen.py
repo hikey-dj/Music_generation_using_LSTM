@@ -229,6 +229,7 @@ def generate_notes(model, initial_notes, num_notes_to_generate):
     return generated_notes     
 
 st.title("Music Generation")
+st.text("Compose like Mozart!")
 
 uploaded_file = st.file_uploader("Choose a MIDI file", type=['mid', 'midi'])
 file_name = [] 
