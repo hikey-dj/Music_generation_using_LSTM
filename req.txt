@@ -1,0 +1,6 @@
+tqdm
+torch
+numpy
+pandas
+streamlit
+pretty_midi
