@@ -1,3 +1,8 @@
+import subprocess
+import sys
+
+subprocess.run([sys.executable, "-m", "pip", "install", "-r", "req.txt"])
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
