@@ -216,7 +216,7 @@ def generate_notes(model, initial_notes, num_notes_to_generate):
     with torch.no_grad():  # Disable gradient calculation since we're only predicting
         for _ in range(num_notes_to_generate):
             #print(generated_notes.shape)
-            input_sequence = generated_notes[-50:].unsqueeze(dim=0)
+            input_sequence = generated_notes.unsqueeze(dim=0)
             
             # Predict the next note
             predictions = model(input_sequence)
