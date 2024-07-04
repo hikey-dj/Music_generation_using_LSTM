@@ -11,7 +11,7 @@ import streamlit as st
 from io import BytesIO
 
 class MusicGenerator(nn.Module):
-    def __init__(self, input_size, hidden_size, output_size, num_layers=2, dropout=0.1):
+    def __init__(self, input_size, hidden_size, output_size, num_layers=2, dropout=0):
         super(MusicGenerator, self).__init__()        
         # LSTM layers
         self.lstm1 = nn.LSTM(input_size, hidden_size, num_layers=num_layers, batch_first=True, dropout=dropout, bidirectional=False)
